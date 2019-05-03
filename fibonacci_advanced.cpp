@@ -21,9 +21,11 @@ bool  Fibonacci::validate_input(int n){
     return true;
 }
 
+
 void  Fibonacci::get_even_sum(int n){
     cout << even_sum(n) << endl;
 }
+
 
 // calculate the sum of the even fibonacci numbers in the 
 // first n terms of the series. The run time complexity of the
@@ -39,6 +41,7 @@ int  Fibonacci::even_sum(int n){
         psi3 * ((1 - pow(psi3, number_index)) / (1 - psi3))
     ));
 }
+
 
 int main()
 {

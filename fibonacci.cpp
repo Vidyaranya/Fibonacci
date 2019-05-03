@@ -16,6 +16,7 @@ void  Fibonacci::get_even_sum(int n){
     cout << even_sum(n) << endl;
 }
 
+
 // Check whether the entered index is valid
 bool  Fibonacci::validate_input(int n){
     if (n < 1) {
@@ -24,6 +25,7 @@ bool  Fibonacci::validate_input(int n){
     }
     return true;
 }
+
 
 // calculate the sum of the even fibonacci numbers in the 
 // first n terms of the series. The run time complexity of the
