@@ -44,13 +44,14 @@ int  Fibonacci::even_sum(int n){
         return 10;
     }
 
-    for (int i = 0; i < number_index; i++) {
+    for (int i = 0; i < number_index - 2; i++) {
+        cout << "af";
         c = 4 * b + a;
         sum += c;
-        return sum;
         a = b;
         b = c;
     }
+    return sum;
 }
 
 
