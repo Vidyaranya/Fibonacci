@@ -20,7 +20,7 @@ Fn = Fn-1 + Fn-2 <br>
    = 3Fn-3 + 2Fn-4 <br>
    = 4Fn-3 + Fn-6  <br>
    
-Use the above formula to calculate the appropriate number of even numbers and sum them up.
+Calculate the appropriate number of even numbers and use the above formula to sum them up.
 
 <b>Calculate the sum of the even fibonacci numbers in the first n terms of the series in O(1):</b>
 
