@@ -5,15 +5,15 @@ using namespace std;
 class Fibonacci{
 public:
     int a, b, c, sum;
-    void get_even_sum(int);
+    int get_even_sum(int);
     bool validate_input(int);
 private:
      int even_sum(int);
 };
 
 
-void  Fibonacci::get_even_sum(int n){
-    cout << even_sum(n) << endl;
+int  Fibonacci::get_even_sum(int n){
+    return even_sum(n);
 }
 
 
@@ -45,7 +45,6 @@ int  Fibonacci::even_sum(int n){
     }
 
     for (int i = 0; i < number_index - 2; i++) {
-        cout << "af";
         c = 4 * b + a;
         sum += c;
         a = b;
@@ -62,7 +61,7 @@ int main()
     cin  >> n;
     Fibonacci fibonacci;
     if (fibonacci.validate_input(n)) {
-        fibonacci.get_even_sum(n);
+        cout << fibonacci.get_even_sum(n) << endl;
     }
     return 0;
 }
