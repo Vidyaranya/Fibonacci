@@ -5,7 +5,7 @@ using namespace std;
 
 class Fibonacci{
 public:
-    void get_even_sum(int);
+    int get_even_sum(int);
     bool validate_input(int);
 private:
      int even_sum(int);
@@ -22,8 +22,8 @@ bool  Fibonacci::validate_input(int n){
 }
 
 
-void  Fibonacci::get_even_sum(int n){
-    cout << even_sum(n) << endl;
+int  Fibonacci::get_even_sum(int n){
+    return even_sum(n);
 }
 
 
@@ -50,7 +50,7 @@ int main()
     cin  >> n;
     Fibonacci fibonacci;
      if (fibonacci.validate_input(n)) {
-        fibonacci.get_even_sum(n);
+        cout << fibonacci.get_even_sum(n) << endl;
     }
     return 0;
 }
